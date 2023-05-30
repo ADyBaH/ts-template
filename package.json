@@ -18,7 +18,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
+    "!(./.husky)**/*.{js,jsx,ts,tsx}": [
       "npm run l"
     ]
   },
