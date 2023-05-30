@@ -59,7 +59,7 @@
       }
     ],
     "max-lines-per-function": ["error", 40],
-    "no-console": 1,
+    "no-console": 2,
     "no-debugger": 0,
     "no-multiple-empty-lines": [
       "error",
