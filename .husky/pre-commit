@@ -8,6 +8,17 @@ NC='\033[0m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m' # No Color
 
+confirm () {
+  printf "${YELLOW}"
+  read -rp "Continue with commit? (y/n) " yn
+  printf "${NC}"
+  if test "$yn" == "y" || test "$yn" == "Y"
+  then
+    printf "\n" # CONTINUE
+  else
+    exit 1
+  fi
+}
 
 run_linter () {
   echo -e "${PURPLE}Linting the src folder ==> ${NC}${CYAN}Ext: .ts ${NC}"
@@ -15,6 +26,18 @@ run_linter () {
   if [[ $? -ne 0 ]]
   then
     exit 1
+  fi
+}
+
+no_console () {
+  consoleRegexp='^[^-].*console.log'
+  filenameRegexp='^[^-].*console.log(\|^+++'
+
+  if test "$(git diff --cached | grep -c "$consoleRegexp")" != 0
+  then
+    git diff --cached | grep -ne "$filenameRegexp" | grep -B1 "$consoleRegexp"
+    printf "\nSome files include ${LRED}console.log${NC}.\n"
+
   fi
 }
 
@@ -27,7 +50,9 @@ check_branch () {
 }
 
 ### RUN THROUGH CHECKS AND STOP IF THERE IS A PROBLEM
+no_console
 run_linter
 check_branch
+
 
 printf "${GREEN}Proceeding with commit...${NC}\n"
