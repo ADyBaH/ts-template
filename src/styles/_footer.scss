@@ -46,8 +46,10 @@
   &__rss-logo {
     @extend %text-logo-with-shadow;
     @extend %background;
+
     width: 2rem;
     padding: 1rem;
+    
     background-image: url('../assets/icons/rss-logo.svg');
     background-repeat: no-repeat;
     background-position: center;

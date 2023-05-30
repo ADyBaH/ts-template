@@ -1,0 +1,7 @@
+.header {
+  &__logo {
+    @extend %text-logo-with-shadow;
+    
+    text-align: center;
+  }
+}
