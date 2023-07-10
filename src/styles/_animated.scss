@@ -1,0 +1,74 @@
+@keyframes skew {
+  0% {
+    transform: skew(2deg, 2deg) scale(1);
+  }
+
+  50% {
+    transform: skew(0deg, 0deg) scale(0.9);
+  }
+
+  100% {
+    transform: skew(-2deg, -2deg) scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color-animation {
+  0% {
+    background-color: #ffffff80;
+  }
+  
+  100% {
+    background-color: #00ffff80;
+  }
+}
+

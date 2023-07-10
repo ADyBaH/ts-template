@@ -1,0 +1,68 @@
+@import '../../../../styles/variables';
+
+.footer {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+
+  &__logo {
+    @extend %text-logo-with-shadow;
+  }
+
+  &__github {
+    @extend %text-logo-with-shadow;
+    @extend %background;
+
+    position: relative;
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      right: 4.6rem;
+
+      width: 0.9rem;
+      height: 0.9rem;
+
+      background-image: url('../../../../assets/icons/github-logo.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__rss-logo {
+    @extend %text-logo-with-shadow;
+    @extend %background;
+
+    width: 2rem;
+    padding: 1rem;
+    
+    background-image: url('../../../../assets/icons/rss-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+
+    transition: transform 0.3s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

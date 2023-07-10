@@ -1,0 +1,33 @@
+.dark-theme {
+  --description-white-logo: #505050;
+  --bg-color: #17171a;
+  --logo-color: #f5f8ff;
+  --bg-article-color: #1f2025;
+  --bg-shadow-article-color: #beb8b869;
+  --text-color: #beb8b8;
+  --skill-bar-color-percent: #506363;
+  --skill-bar-color: #fff;
+  --completed: #00ff08;
+  --func: #20a3cb;
+  --red: #ff5252;
+  --orang: #ffc400;
+  --pur: #c66aff;
+  --modal-background: #0000008f;
+}
+
+.light-theme {
+  --description-white-logo: #505050;
+  --bg-color: #ccc;
+  --logo-color: #373737;
+  --bg-article-color: #feffff;
+  --bg-shadow-article-color: #605b5b69;
+  --text-color: #373737;
+  --skill-bar-color-percent: #6e7d7d;
+  --skill-bar-color: #373737;
+  --completed: #107f13;
+  --func: #007da3;
+  --orang: #8d7011;
+  --red: #e00000;
+  --pur: #9d00ff;
+  --modal-background: #0000008f;
+}

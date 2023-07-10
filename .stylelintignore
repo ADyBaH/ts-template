@@ -1,0 +1,6 @@
+*.ts
+*.js
+*.md
+*.svg
+node_modules
+build

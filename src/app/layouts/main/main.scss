@@ -1,0 +1,65 @@
+.main {
+  justify-content: center;
+}
+
+.tab {
+  margin-left: 1rem;
+}
+
+.double-tab {
+  margin-left: 2rem;
+}
+
+.editor-block {
+  display: flex;
+}
+
+.file-block {
+  display: flex;
+
+  &__number {
+    margin: 0;
+    text-align: end;
+  }
+}
+
+.table {
+  &__element {
+    cursor: pointer;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+  }
+}
+
+.html-text {
+  &__element {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+}
+
+.active {
+  box-shadow: 0 0 10px #010100;
+}
+
+.active-text {
+  color: #ffffffb6;
+  text-shadow: 2px 2px 5px #ffffffb6;
+}
+
+.shake {
+	animation: shake .5s ease-out both;
+}
+
+.slide-out {
+	animation: slide-out .5s ease-out both;
+}
+
+.fade-in {
+	animation: fade-in 0.3s ease-in both;
+}
