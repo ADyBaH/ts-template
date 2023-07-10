@@ -1,8 +1,8 @@
-const path = require('path')
-const ESLintPlugin = require('eslint-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 const StylelintPlugin = require('stylelint-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const path = require('path')
 
 const PROJECT = {
   title: 'TStemplate',
@@ -62,5 +62,11 @@ module.exports = {
     ],
   },
 
-  resolve: { extensions: ['.ts', '.js'] },
+  resolve: {
+    extensions: ['.ts', '.js'],
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules',
+    ],
+  },
 }

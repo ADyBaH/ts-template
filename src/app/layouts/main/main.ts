@@ -1,4 +1,4 @@
-import { BaseComponent } from '../../../utils/base-component'
+import { BaseComponent } from 'utils/base-component'
 import { Modal } from './modal/modal'
 import './main.scss'
 

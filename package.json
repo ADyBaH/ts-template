@@ -2,7 +2,7 @@
   "name": "ts-template",
   "version": "1.0.0",
   "description": "ts-template",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "scripts": {
     "deploy-root": "npm run build && npx gh-pages -d dist",
     "deploy-folder": "npm run build && npx gh-pages -d dist -e folder",
