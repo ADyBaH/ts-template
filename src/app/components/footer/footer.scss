@@ -1,4 +1,4 @@
-@import '../../../../styles/variables';
+@import 'styles/variables';
 
 .footer {
   .container {
@@ -33,7 +33,7 @@
       width: 0.9rem;
       height: 0.9rem;
 
-      background-image: url('../../../../assets/icons/github-logo.svg');
+      background-image: url('assets/icons/github-logo.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -52,7 +52,7 @@
     width: 2rem;
     padding: 1rem;
     
-    background-image: url('../../../../assets/icons/rss-logo.svg');
+    background-image: url('assets/icons/rss-logo.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;

@@ -1,4 +1,4 @@
-import { BaseComponent } from '../../../../utils/base-component'
+import { BaseComponent } from '../../base-component'
 import { EmitterEnum } from '../../../enum/emitter-enum'
 import { emitter } from '../../../services/event-emitter'
 import './modal.scss'

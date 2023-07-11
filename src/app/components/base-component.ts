@@ -1,4 +1,4 @@
-import { BaseComponentInterface } from '../app/models/base-component-interface'
+import { BaseComponentInterface } from '../models/base-component-interface'
 
 export class BaseComponent {
   public element
@@ -69,5 +69,13 @@ export class BaseComponent {
 
   public setEventListener(name: string, callback: (event: KeyboardEvent | Event) => void): void {
     this.element.addEventListener(name, callback)
+  }
+
+  public appendElement(element: HTMLElement): void {
+    this.element.append(element)
+  }
+
+  public appends(elements: HTMLElement[]): void {
+    this.element.append(...elements)
   }
 }
